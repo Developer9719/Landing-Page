@@ -1,8 +1,14 @@
-body {
-    max-width: 75vw;
+.videoBackground {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /* Display the video behind other content */
+    z-index: -1;
 }
 
-html, header, .aboutBusiness {
+html, header {
     display: flex;
     justify-content: center;
 }
@@ -12,8 +18,24 @@ header {
     align-items: center;
 }
 
-.businessItem {
+body {
+    font-size: 20px;
+}
+
+header, main {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 2vw 5vw 2vw 5vw;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.aboutBusiness {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    
-    gap: 8px;
+    margin-bottom: 10%;
+}
+
+.businessItem {
+    flex: 1;
 }
