@@ -1,0 +1,19 @@
+body {
+    max-width: 75vw;
+}
+
+html, header, .aboutBusiness {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.businessItem {
+    align-items: center;
+    
+    gap: 8px;
+}
